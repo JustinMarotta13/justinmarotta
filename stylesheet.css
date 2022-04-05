@@ -54,6 +54,12 @@ footer a {
     text-decoration: solid;
 }
 
+.icon {
+    font-size: 32px;
+    padding-bottom: 20px;
+    color: white;
+}
+
 @media only screen and (max-width: 750px) {
     #justinMarotta {
         font-size: 6vw;
