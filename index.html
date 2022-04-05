@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Justin Marotta</title>
+    <!-- For media queries -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1" />
+    <!-- JQuery and TypeIt js (see TypeIt playground for making new animations)-->
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.0.0.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/typeit/6.5.1/typeit.min.js"></script>
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="stylesheet.css"/>
+    <!-- Google Fonts https://fonts.google.com/share?selection.family=Poppins:wght@200%7CSource%20Code%20Pro:wght@300-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&family=Source+Code+Pro:wght@300&display=swap" rel="stylesheet">
+    <!-- Font Awesome icons -->
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+    />
+  </head>
+
+  <body>
+    <p id="justinMarotta">Justin Marotta</p>
+    <P id="codeSnippet">
+{
+  if (hiring) {
+    GoToWebPage(<a href="resume.pdf"class="url">resume</a>);
+    return;
+  }
+
+  if (gaming) {
+    GoToWebPage("<a href="http://marsgamedev.com" class="url">marsgamedev.com</a>");
+    return;
+  })
+}
+    </P>
+
+  </body>
+
+  <footer>
+      Contact:
+      <a href="mailto:jamarotta13@gmail.com">jamarotta13@gmail.com</a>
+      <br />
+      &copy; Justin Marotta 2022
+  </footer>
+
+</html>
+
+<script type="text/javascript">
+  new TypeIt("#justinMarotta", {
+    speed: 50,
+    waitUntilVisible: true
+  }).go();
+
+  new TypeIt("#codeSnippet", {
+    speed: 10,
+    waitUntilVisible: true,
+    startDelay: 2000,
+    cursor: false
+  })
+  .go();
+</script>
