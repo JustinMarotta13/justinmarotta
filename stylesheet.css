@@ -49,6 +49,11 @@ footer a {
     color: rgb(55, 137, 204);
 }
 
+.url {
+    color: rgb(55, 137, 204);
+    text-decoration: solid;
+}
+
 @media only screen and (max-width: 750px) {
     #justinMarotta {
         font-size: 6vw;

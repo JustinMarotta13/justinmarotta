@@ -24,22 +24,24 @@
   <body>
     <p id="justinMarotta">Justin Marotta</p>
     <P id="codeSnippet">
-{
-  if (hiring) {
-    GoToWebPage(<a href="resume.pdf"class="url">resume</a>);
-    return;
-  }
 
-  if (gaming) {
-    GoToWebPage("<a href="http://marsgamedev.com" class="url">marsgamedev.com</a>");
-    return;
-  })
+if (hiring) {
+  GoToWebPage(<a href="resume.pdf"class="url">resume</a>);
+}
+
+if (gaming) {
+  GoToWebPage("<a href="http://marsgamedev.com" class="url">marsgamedev.com</a>");
+}
+
+if (music) {
+  Text("<a id="phoneNumber" class="url">1 518 209 8569</a>"");
 }
     </P>
 
   </body>
 
   <footer>
+      <i class="fa-brands fa-github"></i>
       Contact:
       <a href="mailto:jamarotta13@gmail.com">jamarotta13@gmail.com</a>
       <br />
@@ -49,6 +51,16 @@
 </html>
 
 <script type="text/javascript">
+  if(/iPhone|iPad|iPod/i.test(navigator.userAgent)){
+    // true for iPhone
+    document.getElementById("phoneNumber").href = "JustinMarotta.vcf";
+  }
+
+  if(/Android|webOS|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)){
+    // true for mobile device
+    document.getElementById("phoneNumber").href = "tel:1 518 209 8569";
+  }
+
   new TypeIt("#justinMarotta", {
     speed: 50,
     waitUntilVisible: true
