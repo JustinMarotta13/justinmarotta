@@ -1,0 +1,11 @@
+BEGIN:VCARD
+VERSION:3.0
+PRODID:-//Apple Inc.//macOS 12.2.1//EN
+N:Marotta;Justin;;;
+FN:Justin Marotta
+EMAIL;type=INTERNET;type=HOME;type=pref:jamarotta13@gmail.com
+TEL;type=CELL;type=VOICE;type=pref:15182098569
+TEL;type=IPHONE;type=CELL;type=VOICE:15182098569
+item1.URL;type=pref:justinmarotta.com
+item1.X-ABLabel:_$!<HomePage>!$_
+END:VCARD
