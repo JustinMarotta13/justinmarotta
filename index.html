@@ -22,8 +22,9 @@
   </head>
 
   <body>
-    <p id="justinMarotta">Justin Marotta</p>
-    <P id="codeSnippet">
+    <div id="content">
+      <div id="header">Justin Marotta</div>
+      <div id="codeSnippet">
 
 if (hiring) {
   GoToWebPage(<a href="resume.pdf"class="url">resume</a>);
@@ -36,23 +37,23 @@ if (gaming) {
 if (music) {
   Text("<a id="phoneNumber" class="url">1 518 209 8569</a>");
 }
-    </P>
+      </div>
+    </div>
 
+    <div id="footer">
+        <a class="icon" href="https://www.github.com/JustinMarotta13">
+          <i class="fa-brands fa-github"></i>
+        </a>
+        <a class="icon" href="https://www.linkedin.com/in/justinmarotta13/">
+          <i class="fa-brands fa-linkedin"></i>
+        </a>
+        <br>
+        Contact:
+        <a href="mailto:jamarotta13@gmail.com">jamarotta13@gmail.com</a>
+        <br />
+        &copy; Justin Marotta 2022
+    </div>
   </body>
-
-  <footer>
-      <a class="icon" href="https://www.github.com/JustinMarotta13">
-        <i class="fa-brands fa-github"></i>
-      </a>
-      <a class="icon" href="https://www.linkedin.com/in/justinmarotta13/">
-        <i class="fa-brands fa-linkedin"></i>
-      </a>
-      <br>
-      Contact:
-      <a href="mailto:jamarotta13@gmail.com">jamarotta13@gmail.com</a>
-      <br />
-      &copy; Justin Marotta 2022
-  </footer>
 
 </html>
 
@@ -66,8 +67,10 @@ if (music) {
     // true for mobile device
     document.getElementById("phoneNumber").href = "sms://:+15182098569";
   }
+</script>
 
-  new TypeIt("#justinMarotta", {
+<script type="text/javascript">
+  new TypeIt("#header", {
     speed: 50,
     waitUntilVisible: true
   }).go();

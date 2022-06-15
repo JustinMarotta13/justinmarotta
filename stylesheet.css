@@ -1,50 +1,46 @@
-html, body {
-    height: 100%;
-}
-
 html {
     display: table;
-    margin: auto;
+    margin: 0 auto;
     font-family: Arial, Helvetica, sans-serif;
     background-color: rgb(155, 174, 182);
 }
 
 body {
-    font-family: 'Source Code Pro', monospace;
-
     display: flex;
     flex-direction: column;
-    width: fit-content;
-    margin: 0;
-    padding: 5px;
+    justify-content: center;
+    padding: 0;
+    min-height: 100vh;
 }
-#justinMarotta {
-    margin-top: 60px;
+
+#content {
+    padding: 5px;
+    font-family: 'Source Code Pro', monospace;
+}
+
+#header {
+    margin: 60px 0 60px 0;
     text-align: center;
     color: white;
-    font-size: 5vw
+    font-size: 5vw;
 }
 
 #codeSnippet {
     text-align: left;
     white-space: pre-wrap;
     color: white;
-    font-size: 2vw;
-    width: 100%;
+    font-size: 3vw;
 }
 
-footer {
+#footer {
+    margin: auto 0 20px 0;
     font-family: 'Poppins', sans-serif;
-    position: fixed;
-    left: 0;
-    bottom: 10px;
-    width: 100%;
     color: white;
     text-align: center;
     font-style: normal;
 }
 
-footer a {
+#footer a {
     text-decoration: solid;
     color: rgb(55, 137, 204);
 }
@@ -54,17 +50,20 @@ footer a {
     text-decoration: solid;
 }
 
-.icon {
+#footer .icon {
     font-size: 32px;
     padding-bottom: 20px;
     color: white;
 }
 
-@media only screen and (max-width: 750px) {
-    #justinMarotta {
-        font-size: 6vw;
+@media only screen and (max-width: 425px) {
+    #header {
+        font-size: 8vw;
     }
     #codeSnippet {
         font-size: 4vw;
+    }
+    #footer {
+        margin-bottom: 70px;
     }
 }
