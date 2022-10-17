@@ -23,14 +23,14 @@ body {
     margin: 60px 0 60px 0;
     text-align: center;
     color: white;
-    font-size: 5vw;
+    font-size: 4vw;
 }
 
 #codeSnippet {
     text-align: left;
     white-space: pre-wrap;
     color: white;
-    font-size: 3vw;
+    font-size: 2vw;
 }
 
 #footer {
